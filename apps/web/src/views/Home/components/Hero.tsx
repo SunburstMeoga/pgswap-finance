@@ -270,7 +270,8 @@ const Hero = () => {
           position="relative"
         >
           <BunnyWrapper>
-            <CakeBox>
+            <img src='/images/nfts/dex.png' alt=''></img>
+            {/* <CakeBox>
               <CakeCanvas
                 className={isIOS || isMobile ? 'is-ios' : undefined}
                 width={isIOS || isMobile ? 500 : width}
@@ -299,7 +300,7 @@ const Hero = () => {
                   </CakeVideo>
                 </VideoWrapper>
               )}
-            </CakeBox>
+            </CakeBox> */}
           </BunnyWrapper>
         </Flex>
       </Flex>

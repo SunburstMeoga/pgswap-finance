@@ -1,7 +1,6 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Flex, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { useQuery } from '@tanstack/react-query'
-import { ASSET_CDN } from 'config/constants/endpoints'
 import Image from 'next/legacy/image'
 import { styled } from 'styled-components'
 import { ChainTags } from './ChainTags'
@@ -102,31 +101,34 @@ const Stats = () => {
       <ImageLayer>
         <BnbBallRocket>
           <Image
-            src={`${ASSET_CDN}/web/landing/bnb-ball-rocket.png`}
+            // src={`${ASSET_CDN}/web/landing/bnb-ball-rocket.png`}
+            src={`/images/nfts/10 1.png`}
             alt="bnbBallRocket"
-            width={144}
-            height={168}
+            width={420}
+            height={308}
             unoptimized
           />
         </BnbBallRocket>
         <EthBallRocket>
           <Image
-            src={`${ASSET_CDN}/web/landing/eth-ball-rocket.png`}
+            // src={`${ASSET_CDN}/web/landing/eth-ball-rocket.png`}
+            src={`/images/nfts/pic2-3.png`}
             alt="ethBallRocket"
-            width={isXxl ? 116 : 70}
-            height={isXxl ? 230 : 140}
+            width={isXxl ? 338 : 70}
+            height={isXxl ? 332 : 140}
             unoptimized
           />
         </EthBallRocket>
-        <AptosBallRocket>
+        {/* <AptosBallRocket>
           <Image
-            src={`${ASSET_CDN}/web/landing/aptos-ball-rocket.png`}
+            // src={`${ASSET_CDN}/web/landing/aptos-ball-rocket.png`}
+            src={`/images/nfts/pic2-3.png`}
             alt="aptosBallRocket"
             width={isXxl ? 84 : 53}
             height={isXxl ? 101 : 64}
             unoptimized
           />
-        </AptosBallRocket>
+        </AptosBallRocket> */}
       </ImageLayer>
     </Flex>
   )

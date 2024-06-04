@@ -5,8 +5,7 @@ import type SwiperCore from 'swiper'
 import 'swiper/css'
 import 'swiper/css/effect-fade'
 import 'swiper/css/pagination'
-import { Autoplay, EffectFade, Pagination } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper } from 'swiper/react'
 import { useMultipleBannerConfig } from './hooks/useMultipleBannerConfig'
 
 const BannerPlaceHolder = styled.div`
@@ -112,30 +111,31 @@ const MultipleBanner: React.FC<React.PropsWithChildren> = () => {
   }, [bannerList, swiperRef])
 
   return (
-    <BannerPlaceHolder>
-      <StyledSwiper
-        onSwiper={setSwiperRef}
-        modules={[Autoplay, Pagination, EffectFade]}
-        spaceBetween={50}
-        observer
-        slidesPerView={1}
-        effect="fade"
-        fadeEffect={{ crossFade: true }}
-        speed={500}
-        autoplay={{ delay: 5000, pauseOnMouseEnter: true, disableOnInteraction: false }}
-        loop
-        pagination={{ clickable: true }}
-      >
-        {bannerList.map((banner, index) => {
-          const childKey = `Banner${index}`
-          return (
-            <SwiperSlide style={{ padding: isDesktop || isTablet ? 20 : 0, height: 'auto' }} key={childKey}>
-              {banner}
-            </SwiperSlide>
-          )
-        })}
-      </StyledSwiper>
-    </BannerPlaceHolder>
+    // <BannerPlaceHolder>
+    //   <StyledSwiper
+    //     onSwiper={setSwiperRef}
+    //     modules={[Autoplay, Pagination, EffectFade]}
+    //     spaceBetween={50}
+    //     observer
+    //     slidesPerView={1}
+    //     effect="fade"
+    //     fadeEffect={{ crossFade: true }}
+    //     speed={500}
+    //     autoplay={{ delay: 5000, pauseOnMouseEnter: true, disableOnInteraction: false }}
+    //     loop
+    //     pagination={{ clickable: true }}
+    //   >
+    //     {bannerList.map((banner, index) => {
+    //       const childKey = `Banner${index}`
+    //       return (
+    //         <SwiperSlide style={{ padding: isDesktop || isTablet ? 20 : 0, height: 'auto' }} key={childKey}>
+    //           {banner}
+    //         </SwiperSlide>
+    //       )
+    //     })}
+    //   </StyledSwiper>
+    // </BannerPlaceHolder>
+    <></>
   )
 }
 

@@ -10,7 +10,7 @@ const stepList = [
     subTitle: (
       <Trans>使用兑换页面上的热门代币列表，立即查看哪些币对有资格获得交易返利，享受额外收益</Trans>
     ),
-    imgUrl: '/images/trading-reward/step1-1.png',
+    imgUrl: '/images/nfts/chazhao.png',
   },
   {
     title: <Trans>Start trading</Trans>,
@@ -19,19 +19,19 @@ const stepList = [
        开始交易特定符合条件的比对，赚取丰厚的PGC奖励！您的交易量越大，从当前返利池仲获得的返利就越多
       </Trans>
     ),
-    imgUrl: '/images/trading-reward/step2-1.png',
+    imgUrl: '/images/nfts/kaishi.png',
   },
   {
     title: <Trans>时刻掌握动态收益</Trans>,
     subTitle: <Trans>返回此页面，试试查看您的交易量和奖励情况，不错过任何收益增长的机会</Trans>,
-    imgUrl: '/images/trading-reward/step3-1.png',
+    imgUrl: '/images/nfts/genzong.png',
   },
   {
     title: <Trans>Claim your rewards</Trans>,
     subTitle: (
       <Trans>每期活动结束后，请返回此页面并领取之前活动的返利。</Trans>
     ),
-    imgUrl: '/images/trading-reward/step4-1.png',
+    imgUrl: '/images/nfts/lingqu.png',
   },
 ]
 

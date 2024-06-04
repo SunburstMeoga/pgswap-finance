@@ -1,16 +1,16 @@
 import { Trans, useTranslation } from '@pancakeswap/localization'
 import { Flex, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-    BackgroundGraphic,
-    BannerActionContainer,
-    BannerContainer,
-    BannerGraphics,
-    BannerMain,
-    BannerTitle,
-    FloatingGraphic,
-    GraphicDetail,
-    LinkExternalAction,
-    PancakeSwapBadge,
+  BackgroundGraphic,
+  BannerActionContainer,
+  BannerContainer,
+  BannerGraphics,
+  BannerMain,
+  BannerTitle,
+  FloatingGraphic,
+  GraphicDetail,
+  LinkExternalAction,
+  PancakeSwapBadge,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import styled from 'styled-components'

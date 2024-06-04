@@ -6,7 +6,7 @@ import { useTranslation } from '@pancakeswap/localization'
 import Image from 'next/image'
 import { styled } from 'styled-components'
 import { floatingStarsLeft, floatingStarsRight } from 'views/Lottery/components/Hero'
-import bunnyImage from '../../../../public/images/trading-reward/trading-reward-banner-bunny.png'
+import bunnyImage from '../../../../public/images/nfts/2-3.png'
 
 const Container = styled(Box)<{ backgroundColor: string }>`
   padding: 47px 16px 38px 16px;

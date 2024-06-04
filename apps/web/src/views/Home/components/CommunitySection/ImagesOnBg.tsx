@@ -146,11 +146,12 @@ export const RightImageWrapper = styled.div`
 export const RightTopBox: React.FC = () => {
   return (
     <RightImageWrapper>
-      <Image className="pinkBubble" src={`${ASSET_CDN}/web/landing/community-items/1.png`} alt="pink-bubble" />
+      {/* <Image className="pinkBubble" src={`${ASSET_CDN}/web/landing/community-items/1.png`} alt="pink-bubble" />
       <Image className="ring" src={`${ASSET_CDN}/web/landing/community-items/2.png`} alt="ring" />
       <Image className="heart" src={`${ASSET_CDN}/web/landing/community-items/3.png`} />
       <Image className="speaker" src={`${ASSET_CDN}/web/landing/community-items/4.png`} alt="speaker" />
-      <Image className="yellowBubble" src={`${ASSET_CDN}/web/landing/community-items/5.png`} alt="yellow-bubble" />
+      <Image className="yellowBubble" src={`${ASSET_CDN}/web/landing/community-items/5.png`} alt="yellow-bubble" /> */}
+       <Image className="" src={`/images/nfts/11 1.png`} alt="yellow-bubble" style={{marginRight: '400px', marginTop:'300px'}}/>
     </RightImageWrapper>
   )
 }
@@ -167,10 +168,11 @@ export const RightBottomBox: React.FC = () => {
 export const LeftBottomBox: React.FC = () => {
   return (
     <LeftImageWrapper>
-      <Image className="discord" src={`${ASSET_CDN}/web/landing/socials/1.png`} alt="discord" />
+      {/* <Image className="discord" src={`${ASSET_CDN}/web/landing/socials/1.png`} alt="discord" />
       <Image className="twitter" src={`${ASSET_CDN}/web/landing/socials/2.png`} alt="twitter" />
       <Image className="telegram" src={`${ASSET_CDN}/web/landing/socials/3.png`} alt="telegram" />
-      <Image className="instagram" src={`${ASSET_CDN}/web/landing/socials/4.png`} alt="instagram" />
+      <Image className="instagram" src={`${ASSET_CDN}/web/landing/socials/4.png`} alt="instagram" /> */}
+      <Image src={`/images/nfts/zi121 1.png`}></Image>
     </LeftImageWrapper>
   )
 }

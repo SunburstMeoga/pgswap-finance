@@ -172,24 +172,30 @@ const useTradeBlockData = () => {
         title: t('Swap'),
         description: t('Trade crypto instantly across multiple chains'),
         ctaTitle: t('Trade Now'),
-        image: `${ASSET_CDN}/web/landing/trade-swap.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/trade-swap-purple.png`,
+        // image: `${ASSET_CDN}/web/landing/trade-swap.png`,
+        // defaultImage: `${ASSET_CDN}/web/landing/trade-swap-purple.png`,
+         image: `/images/nfts/duihuan.svg`,
+        defaultImage: `/images/nfts/duihuan.svg`,
         path: '/swap',
       },
       {
         title: t('Liquidity'),
         description: t('Fund liquidity pools, earn trading fees'),
         ctaTitle: t('Add Now'),
-        image: `${ASSET_CDN}/web/landing/trade-liquidity.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/trade-liquidity-purple.png`,
+        // image: `${ASSET_CDN}/web/landing/trade-liquidity.png`,
+        // defaultImage: `${ASSET_CDN}/web/landing/trade-liquidity-purple.png`,
+        image: `/images/nfts/liudongxing.svg`,
+        defaultImage: `/images/nfts/liudongxing.svg`,
         path: '/liquidity',
       },
       {
         title: t('Bridge'),
         description: t('Seamlessly transfer assets across chains'),
         ctaTitle: t('Bridge Now'),
-        image: `${ASSET_CDN}/web/landing/trade-bridge.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/trade-bridge-purple.png`,
+        // image: `${ASSET_CDN}/web/landing/trade-bridge.png`,
+        // defaultImage: `${ASSET_CDN}/web/landing/trade-bridge-purple.png`,
+        image: `/images/nfts/kualianqiao.svg`,
+        defaultImage: `/images/nfts/kualianqiao.svg`,
         path: 'https://bridge.pancakeswap.finance/',
       },
       // {
@@ -210,8 +216,10 @@ const useTradeBlockData = () => {
         title: t('Buy Crypto'),
         description: t('Buy crypto with your preferred currency and payment method'),
         ctaTitle: t('Buy Now'),
-        image: `${ASSET_CDN}/web/landing/trade-buy-crypto.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/trade-buy-crypto-purple.png`,
+        // image: `${ASSET_CDN}/web/landing/trade-buy-crypto.png`,
+        // defaultImage: `${ASSET_CDN}/web/landing/trade-buy-crypto-purple.png`,
+        image: `/images/nfts/goumai.svg`,
+        defaultImage: `/images/nfts/goumai.svg`,
         path: '/buy-crypto',
       },
     ]
@@ -395,7 +403,8 @@ const EcoSystemSection: React.FC = () => {
         >
           <Image
             style={{ marginLeft: isMobile ? -32 : -72 }}
-            src={`${ASSET_CDN}/web/landing/trade-bunny.png`}
+            // src={`${ASSET_CDN}/web/landing/trade-bunny.png`}
+            src="/images/nfts/pic-2.png"
             alt="trade-bunny"
             width={340}
             height={340}
