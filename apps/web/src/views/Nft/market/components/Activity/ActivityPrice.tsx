@@ -1,5 +1,5 @@
-import { Flex, BinanceIcon, Text, Skeleton } from '@pancakeswap/uikit'
-import BigNumber from 'bignumber.js'
+import { Flex, Skeleton, Text } from '@pancakeswap/uikit';
+import BigNumber from 'bignumber.js';
 
 const ActivityPrice = ({ bnbBusdPrice, price }: { bnbBusdPrice: BigNumber; price: number }) => {
   const priceInUsd = bnbBusdPrice.multipliedBy(price).toNumber()
@@ -9,7 +9,8 @@ const ActivityPrice = ({ bnbBusdPrice, price }: { bnbBusdPrice: BigNumber; price
       {price ? (
         <>
           <Flex justifySelf="flex-start" alignItems="center">
-            <BinanceIcon width="12px" height="12px" mr="4px" />
+            {/* <BinanceIcon width="12px" height="12px" mr="4px" /> */}
+            <img src='https://www.pgchain.org/img/pglogo@60.png' style={{width: '12px', marginRight:'4px'}} alt=''></img>
             <Text maxWidth="80px" bold>
               {price.toLocaleString(undefined, {
                 minimumFractionDigits: 0,
