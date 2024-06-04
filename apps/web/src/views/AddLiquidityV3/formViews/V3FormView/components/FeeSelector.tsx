@@ -224,7 +224,7 @@ export default function FeeSelector({
               */}
               <Button variant="text" onClick={handleSelectV2}>
                 <Text color="textSubtle" bold>
-                  {t('Add V2 Liquidity')}
+                  {/* {t('Add V2 Liquidity')} */}
                 </Text>
               </Button>
             </AtomBox>

@@ -1,6 +1,5 @@
 import { PositionDetails } from '@pancakeswap/farms'
 import { useTranslation } from '@pancakeswap/localization'
-import { isStableSwapSupported } from '@pancakeswap/stable-swap-sdk'
 import {
   AddIcon,
   Button,
@@ -319,12 +318,12 @@ export default function PoolListPage() {
                 onItemClick={(index) => setSelectedTypeIndex(index)}
                 variant="subtle"
               >
-                <ButtonMenuItem>{t('All')}</ButtonMenuItem>
+                {/* <ButtonMenuItem>{t('All')}</ButtonMenuItem> */}
                 <ButtonMenuItem>V3</ButtonMenuItem>
-                <ButtonMenuItem display={isStableSwapSupported(chainId) ? 'inline-flex' : 'none'}>
+                {/* <ButtonMenuItem display={isStableSwapSupported(chainId) ? 'inline-flex' : 'none'}>
                   {t('StableSwap')}
                 </ButtonMenuItem>
-                <ButtonMenuItem>V2</ButtonMenuItem>
+                <ButtonMenuItem>V2</ButtonMenuItem> */}
               </ButtonMenu>
             </>
           }

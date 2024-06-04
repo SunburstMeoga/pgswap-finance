@@ -154,11 +154,13 @@ const TradingRewardBanner = () => {
           </Text>
           <Flex mb="16px" flexWrap="wrap">
             <Text bold fontSize="40px" color="secondary" as="span" ml="4px" lineHeight="110%">
-              {t('10% trading rebate to be earned!')}
+              {/* {t('10% trading rebate to be earned!')} */}
+              立刻赚取10%交易返利，机会不容错过！
             </Text>
           </Flex>
           <Text bold mb="32px" maxWidth="404px" lineHeight="26.4px" fontSize={['16px', '16px', '16px', '24px']}>
-            {t('Earn CAKE while trading your favorite tokens on PGSWAP FINANCE.')}
+            {/* {t('Earn CAKE while trading your favorite tokens on PGSWAP FINANCE.')} */}
+            在 PGSwap 上交易您最喜爱的代币，轻松赚取丰厚的 PGC 奖励！
           </Text>
           <Flex alignSelf={['center', 'center', 'center', 'auto']}>
             <NextLinkFromReactRouter to="/swap?showTradingReward=true">

@@ -1,6 +1,5 @@
 import { SUPPORTED_CHAIN_IDS as IFO_SUPPORTED_CHAINS } from '@pancakeswap/ifos'
 import { ContextApi } from '@pancakeswap/localization'
-import { SUPPORTED_CHAIN_IDS as POOL_SUPPORTED_CHAINS } from '@pancakeswap/pools'
 import { SUPPORTED_CHAIN_IDS as POSITION_MANAGERS_SUPPORTED_CHAINS } from '@pancakeswap/position-managers'
 import {
   DropdownMenuItems,
@@ -17,9 +16,8 @@ import {
 import {
   FIXED_STAKING_SUPPORTED_CHAINS,
   LIQUID_STAKING_SUPPORTED_CHAINS,
-  SUPPORT_CAKE_STAKING,
   SUPPORT_FARMS,
-  SUPPORT_ONLY_BSC,
+  SUPPORT_ONLY_BSC
 } from 'config/constants/supportChains'
 import { nftsBaseUrl } from 'views/Nft/market/constants'
 
@@ -97,14 +95,14 @@ const config: (
         },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
-    // {
-    //   label: t('Buy'),
-    //   href: '/buy-crypto',
-    //   icon: ShoppingBasketIcon,
-    //   fillIcon: ShoppingBasketFilledIcon,
-    //   showItemsOnMobile: false,
-    //   items: [],
-    // },
+    {
+      label: t('Buy'),
+      href: '/buy-crypto',
+      // icon: ShoppingBasketIcon,
+      // fillIcon: ShoppingBasketFilledIcon,
+      showItemsOnMobile: false,
+      items: [],
+    },
     {
       label: t('Earn'),
       href: '/farms',
@@ -118,16 +116,16 @@ const config: (
           href: '/farms',
           supportChainIds: SUPPORT_FARMS,
         },
-        {
-          label: t('CAKE Staking'),
-          href: '/cake-staking',
-          supportChainIds: SUPPORT_CAKE_STAKING,
-        },
-        {
-          label: t('Pools'),
-          href: '/pools',
-          supportChainIds: POOL_SUPPORTED_CHAINS,
-        },
+        // {
+        //   label: t('CAKE Staking'),
+        //   href: '/cake-staking',
+        //   supportChainIds: SUPPORT_CAKE_STAKING,
+        // },
+        // {
+        //   label: t('Pools'),
+        //   href: '/pools',
+        //   supportChainIds: POOL_SUPPORTED_CHAINS,
+        // },
         {
           label: t('Position Manager'),
           href: '/position-managers',

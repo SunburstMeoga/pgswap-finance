@@ -67,7 +67,8 @@ const Stats = () => {
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column" overflow="hidden">
       <Text textAlign="center" lineHeight="110%" fontWeight={600} mb="4px" fontSize={isMobile ? '20px' : '32px'}>
-        {t('Shaping the Future of Decentralized Trading:')}
+        {/* {t('Shaping the Future of Decentralized Trading:')} */}
+        引领去中心化交易的未来：
       </Text>
       <Text
         textAlign="center"
@@ -76,7 +77,8 @@ const Stats = () => {
         fontSize={isMobile ? '20px' : '32px'}
         mb={isMobile ? '32px' : '48px'}
       >
-        {t('PancakeSwap’s Unstoppable Expansion')}
+        {/* {t('PancakeSwap’s Unstoppable Expansion')} */}
+        PGSwap 强势扩张中
       </Text>
       <Flex
         justifyContent="center"

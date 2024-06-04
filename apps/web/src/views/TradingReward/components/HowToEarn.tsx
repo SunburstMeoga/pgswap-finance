@@ -1,14 +1,14 @@
-import { styled } from 'styled-components'
-import { Box, Flex, Text, Card, LinkExternal } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
-import Image from 'next/image'
+import { Box, Card, Flex, LinkExternal, Text } from '@pancakeswap/uikit'
 import Trans from 'components/Trans'
+import Image from 'next/image'
+import { styled } from 'styled-components'
 
 const stepList = [
   {
-    title: <Trans>Look for eligible pairs</Trans>,
+    title: <Trans>抓住最佳交易机会</Trans>,
     subTitle: (
-      <Trans>Use the hot token list on the Swap page to check which pairs are eligible for trading rewards.</Trans>
+      <Trans>使用兑换页面上的热门代币列表，立即查看哪些币对有资格获得交易返利，享受额外收益</Trans>
     ),
     imgUrl: '/images/trading-reward/step1-1.png',
   },
@@ -16,21 +16,20 @@ const stepList = [
     title: <Trans>Start trading</Trans>,
     subTitle: (
       <Trans>
-        Start trading any eligible pairs to earn rewards in CAKE. The more you trade, the more rewards you will earn
-        from the current reward pool.
+       开始交易特定符合条件的比对，赚取丰厚的PGC奖励！您的交易量越大，从当前返利池仲获得的返利就越多
       </Trans>
     ),
     imgUrl: '/images/trading-reward/step2-1.png',
   },
   {
-    title: <Trans>Track your volume and rewards</Trans>,
-    subTitle: <Trans>Come back to this page to check your volume and rewards in real-time.</Trans>,
+    title: <Trans>时刻掌握动态收益</Trans>,
+    subTitle: <Trans>返回此页面，试试查看您的交易量和奖励情况，不错过任何收益增长的机会</Trans>,
     imgUrl: '/images/trading-reward/step3-1.png',
   },
   {
     title: <Trans>Claim your rewards</Trans>,
     subTitle: (
-      <Trans>After each period ends, come back to this page and claim your rewards from the previous periods.</Trans>
+      <Trans>每期活动结束后，请返回此页面并领取之前活动的返利。</Trans>
     ),
     imgUrl: '/images/trading-reward/step4-1.png',
   },

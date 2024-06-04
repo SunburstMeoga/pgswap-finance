@@ -192,20 +192,20 @@ const useTradeBlockData = () => {
         defaultImage: `${ASSET_CDN}/web/landing/trade-bridge-purple.png`,
         path: 'https://bridge.pancakeswap.finance/',
       },
-      {
-        title: t('Perpetual'),
-        description: t('Trade endlessly without expiration dates'),
-        ctaTitle: t('Trade Now'),
-        image: `${ASSET_CDN}/web/landing/trade-perpetual.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/trade-perpetual-purple.png`,
-        onClick: () => {
-          if (!userNotUsCitizenAcknowledgement) {
-            onUSCitizenModalPresent()
-          } else {
-            push(perpetualUrl)
-          }
-        },
-      },
+      // {
+      //   title: t('Perpetual'),
+      //   description: t('Trade endlessly without expiration dates'),
+      //   ctaTitle: t('Trade Now'),
+      //   image: `${ASSET_CDN}/web/landing/trade-perpetual.png`,
+      //   defaultImage: `${ASSET_CDN}/web/landing/trade-perpetual-purple.png`,
+      //   onClick: () => {
+      //     if (!userNotUsCitizenAcknowledgement) {
+      //       onUSCitizenModalPresent()
+      //     } else {
+      //       push(perpetualUrl)
+      //     }
+      //   },
+      // },
       {
         title: t('Buy Crypto'),
         description: t('Buy crypto with your preferred currency and payment method'),
@@ -222,47 +222,50 @@ const useEarnBlockData = () => {
   const { t } = useTranslation()
   return useMemo(() => {
     return [
+      // {
+      //   title: t('Farm'),
+      //   description: t('Stake LP tokens, harvest CAKE'),
+      //   ctaTitle: t('Stake Now'),
+      //   image: `${ASSET_CDN}/web/landing/earn-farm.png`,
+      //   defaultImage: `${ASSET_CDN}/web/landing/earn-farm-purple.png`,
+      //   path: '/farms',
+      // },
       {
-        title: t('Farm'),
-        description: t('Stake LP tokens, harvest CAKE'),
-        ctaTitle: t('Stake Now'),
-        image: `${ASSET_CDN}/web/landing/earn-farm.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/earn-farm-purple.png`,
-        path: '/farms',
-      },
-      {
-        title: t('Pools'),
-        description: t('Stake CAKE, earn various rewards'),
+        // title: t('Pools'),
+        title: '双币质押',
+        // description: t('Stake CAKE, earn various rewards'),
+        description: '高收益，多权益',
+
         ctaTitle: t('Stake Now'),
         image: `${ASSET_CDN}/web/landing/earn-pools.png`,
         defaultImage: `${ASSET_CDN}/web/landing/earn-pools-purple.png`,
         path: '/pools',
       },
-      {
-        title: t('Liquid Staking'),
-        description: t('Earn rewards while retaining asset flexibility'),
-        ctaTitle: t('Add Now'),
-        image: `${ASSET_CDN}/web/landing/earn-liquidity-staking.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/earn-liquidity-staking-purple.png`,
-        path: '/liquid-staking',
-      },
-      {
-        title: t('Simple Staking'),
-        description: t('Earn rewards hassle-free with single-sided staking'),
-        ctaTitle: t('Stake Now'),
-        image: `${ASSET_CDN}/web/landing/earn-fixed-staking.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/earn-fixed-staking-purple.png`,
-        path: '/simple-staking',
-      },
-      {
-        title: t('Position Manager'),
-        description: t('Automate your PGSWAP FINANCE v3 liquidity'),
-        ctaTitle: t('Stake Now'),
-        image: `${ASSET_CDN}/web/landing/earn-pm.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/earn-pm-purple.png`,
-        path: '/position-managers',
-        className: 'adjust-height',
-      },
+      // {
+      //   title: t('Liquid Staking'),
+      //   description: t('Earn rewards while retaining asset flexibility'),
+      //   ctaTitle: t('Add Now'),
+      //   image: `${ASSET_CDN}/web/landing/earn-liquidity-staking.png`,
+      //   defaultImage: `${ASSET_CDN}/web/landing/earn-liquidity-staking-purple.png`,
+      //   path: '/liquid-staking',
+      // },
+      // {
+      //   title: t('Simple Staking'),
+      //   description: t('Earn rewards hassle-free with single-sided staking'),
+      //   ctaTitle: t('Stake Now'),
+      //   image: `${ASSET_CDN}/web/landing/earn-fixed-staking.png`,
+      //   defaultImage: `${ASSET_CDN}/web/landing/earn-fixed-staking-purple.png`,
+      //   path: '/simple-staking',
+      // },
+      // {
+      //   title: t('Position Manager'),
+      //   description: t('Automate your PGSWAP FINANCE v3 liquidity'),
+      //   ctaTitle: t('Stake Now'),
+      //   image: `${ASSET_CDN}/web/landing/earn-pm.png`,
+      //   defaultImage: `${ASSET_CDN}/web/landing/earn-pm-purple.png`,
+      //   path: '/position-managers',
+      //   className: 'adjust-height',
+      // },
     ]
   }, [t])
 }
@@ -271,25 +274,27 @@ const useNftGameBlockData = () => {
   const { t } = useTranslation()
   return useMemo(() => {
     return [
-      {
-        title: t('Gaming Marketplace'),
-        description: t('Play, Build and Connect on PGSWAP FINANCE'),
-        ctaTitle: t('Play Now'),
-        image: `${ASSET_CDN}/web/landing/game-pancake-protectors.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/game-pancake-protectors-purple.png`,
-        path: 'https://pancakeswap.games/',
-      },
-      {
-        title: t('Prediction'),
-        description: t('Forecast token prices within minutes'),
-        ctaTitle: t('Try Now'),
-        image: `${ASSET_CDN}/web/landing/game-prediction.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/game-prediction-purple.png`,
-        path: '/prediction',
-      },
+      // {
+      //   title: t('Gaming Marketplace'),
+      //   description: t('Play, Build and Connect on PGSWAP FINANCE'),
+      //   ctaTitle: t('Play Now'),
+      //   image: `${ASSET_CDN}/web/landing/game-pancake-protectors.png`,
+      //   defaultImage: `${ASSET_CDN}/web/landing/game-pancake-protectors-purple.png`,
+      //   path: 'https://pancakeswap.games/',
+      // },
+      // {
+      //   title: t('Prediction'),
+      //   description: t('Forecast token prices within minutes'),
+      //   ctaTitle: t('Try Now'),
+      //   image: `${ASSET_CDN}/web/landing/game-prediction.png`,
+      //   defaultImage: `${ASSET_CDN}/web/landing/game-prediction-purple.png`,
+      //   path: '/prediction',
+      // },
       {
         title: t('NFT Marketplace'),
-        description: t('Trade unique NFTs on BNB Chain'),
+        // description: t('Trade unique NFTs on BNB Chain'),
+        description: '在PGC链上交易独一无二的NFT',
+
         ctaTitle: t('Trade Now'),
         image: `${ASSET_CDN}/web/landing/nft-marketplace.png`,
         defaultImage: `${ASSET_CDN}/web/landing/nft-marketplace-purple.png`,
@@ -371,6 +376,15 @@ const EcoSystemSection: React.FC = () => {
           color={theme.colors.secondary}
         >
           {t('Ecosystem')}
+        </Text>
+        <Text
+          fontSize={['32px', null, null, '40px']}
+          lineHeight="110%"
+          display="inline-block"
+          bold
+          color={theme.colors.text}
+        >
+          的无尽可能
         </Text>
       </Text>
       <CardWrapper>
@@ -457,7 +471,9 @@ const EcoSystemSection: React.FC = () => {
             unoptimized
           />
           <Flex flexDirection="column">
-            <Title>{t('Game & NFT')}</Title>
+            {/* <Title>{t('Game & NFT')}</Title> */}
+            <Title>NFT</Title>
+
             <FeatureBoxesWrapper>
               {nftGameBlockData.map((item) => (
                 <FeatureBox

@@ -1,32 +1,32 @@
 import { ChainId } from '@pancakeswap/chains'
 import { useTranslation } from '@pancakeswap/localization'
 import {
-    AtomBox,
-    AutoColumn,
-    AutoRow,
-    Button,
-    ButtonProps,
-    Checkbox,
-    Flex,
-    InjectedModalProps,
-    Message,
-    MessageText,
-    Modal,
-    ModalV2,
-    NotificationDot,
-    PancakeToggle,
-    PreTitle,
-    QuestionHelper,
-    RowFixed,
-    Text,
-    ThemeSwitcher,
-    Toggle,
+  AtomBox,
+  AutoColumn,
+  AutoRow,
+  Button,
+  ButtonProps,
+  Checkbox,
+  Flex,
+  InjectedModalProps,
+  Message,
+  MessageText,
+  Modal,
+  ModalV2,
+  NotificationDot,
+  PancakeToggle,
+  PreTitle,
+  QuestionHelper,
+  RowFixed,
+  Text,
+  ThemeSwitcher,
+  Toggle,
 } from '@pancakeswap/uikit'
 import {
-    useAudioPlay,
-    useExpertMode,
-    useUserExpertModeAcknowledgement,
-    useUserSingleHopOnly,
+  useAudioPlay,
+  useExpertMode,
+  useUserExpertModeAcknowledgement,
+  useUserSingleHopOnly,
 } from '@pancakeswap/utils/user'
 import { ExpertModal } from '@pancakeswap/widgets-internal'
 import { TOKEN_RISK } from 'components/AccessRisk'
@@ -41,13 +41,13 @@ import { useSubgraphHealthIndicatorManager, useUserUsernameVisibility } from 'st
 import { useUserShowTestnet } from 'state/user/hooks/useUserShowTestnet'
 import { useUserTokenRisk } from 'state/user/hooks/useUserTokenRisk'
 import {
-    useMMLinkedPoolByDefault,
-    useOnlyOneAMMSourceEnabled,
-    useRoutingSettingChanged,
-    useUserSplitRouteEnable,
-    useUserStableSwapEnable,
-    useUserV2SwapEnable,
-    useUserV3SwapEnable,
+  useMMLinkedPoolByDefault,
+  useOnlyOneAMMSourceEnabled,
+  useRoutingSettingChanged,
+  useUserSplitRouteEnable,
+  useUserStableSwapEnable,
+  useUserV2SwapEnable,
+  useUserV3SwapEnable,
 } from 'state/user/smartRouter'
 import { styled } from 'styled-components'
 import GasSettings from './GasSettings'
@@ -377,7 +377,7 @@ function RoutingSettings() {
           <PreTitle mb="24px">{t('Liquidity source')}</PreTitle>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>PGSWAP FINANCE V3</Text>
+              <Text>PGSWAP V3</Text>
               <QuestionHelper
                 text={
                   <Flex>
@@ -399,7 +399,7 @@ function RoutingSettings() {
               onChange={() => setV3Enable((s) => !s)}
             />
           </Flex>
-          <Flex justifyContent="space-between" alignItems="center" mb="24px">
+          {/* <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
               <Text>PGSWAP FINANCE V2</Text>
               <QuestionHelper
@@ -423,10 +423,10 @@ function RoutingSettings() {
               checked={v2Enable}
               onChange={() => setV2Enable((s) => !s)}
             />
-          </Flex>
+          </Flex> */}
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>PGSWAP FINANCE {t('StableSwap')}</Text>
+              <Text>PGSWAP {t('StableSwap')}</Text>
               <QuestionHelper
                 text={
                   <Flex flexDirection="column">
@@ -453,7 +453,7 @@ function RoutingSettings() {
           </Flex>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>{`PGSWAP FINANCE ${t('MM Linked Pool')}`}</Text>
+              <Text>{`PGSWAP ${t('MM Linked Pool')}`}</Text>
               <QuestionHelper
                 text={
                   <Flex flexDirection="column">

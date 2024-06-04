@@ -227,11 +227,13 @@ const Hero = () => {
               color="secondary"
               mr={isMobile ? 0 : '8px'}
             >
-              {t('Favorite')}
+              {/* {t('Favorite')}
+               */}
+              热衷使用
             </StyledText>
             {isMobile && <br />}
             <StyledText display="inline-block" lineHeight="110%" fontWeight={600} color="text">
-              {t('DEX')}
+              的{t('DEX')}
             </StyledText>
           </Text>
           <Text
@@ -243,7 +245,8 @@ const Hero = () => {
             lineHeight="110%"
             fontWeight={600}
           >
-            {t('Trade, earn, and own crypto on the all-in-one multichain DEX')}
+            {/* {t('Trade, earn, and own crypto on the all-in-one multichain DEX')} */}
+            在全新的V3去中心化交易所上交易，赚取收益，并掌控您的加密货币。
           </Text>
 
           <Flex justifyContent={isMobile || isMd ? 'center' : 'start'}>

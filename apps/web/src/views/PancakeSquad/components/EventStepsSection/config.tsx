@@ -65,7 +65,8 @@ const stepsConfigBuilder = ({ t, userInfos, eventInfos, userStatus, account, the
             target="_blank"
             width="100%"
           >
-            {t('Buy CAKE')}
+            {/* {t('Buy CAKE')} */}
+            购买PGC
           </Button>
         </>
       ),
