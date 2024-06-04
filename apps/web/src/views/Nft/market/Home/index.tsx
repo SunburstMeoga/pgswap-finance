@@ -9,7 +9,6 @@ import useTheme from 'hooks/useTheme'
 import orderBy from 'lodash/orderBy'
 import { useGetCollections } from 'state/nftMarket/hooks'
 import { useAccount } from 'wagmi'
-import SearchBar from '../components/SearchBar'
 import Collections from './Collections'
 import Newest from './Newest'
 import config from './config'
@@ -75,7 +74,8 @@ const Home = () => {
               {t('NFT Marketplace')}
             </Heading>
             <Heading scale="lg" color="text">
-              {t('Buy and Sell NFTs on BNB Smart Chain')}
+              {/* {t('Buy and Sell NFTs on BNB Smart Chain')} */}
+              在PGChain上交易NFT
             </Heading>
             {account && (
               <Button as={NextLinkFromReactRouter} to={`/profile/${account.toLowerCase()}`} mt="32px">
@@ -83,7 +83,7 @@ const Home = () => {
               </Button>
             )}
           </div>
-          <SearchBar />
+          {/* <SearchBar /> */}
         </StyledHeaderInner>
       </StyledPageHeader>
       {status !== 'success' ? (
