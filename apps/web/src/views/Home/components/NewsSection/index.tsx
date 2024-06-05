@@ -1,8 +1,7 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { ChevronLeftIcon, ChevronRightIcon, Flex, Text } from '@pancakeswap/uikit'
 import useTheme from 'hooks/useTheme'
+import { useCallback, useRef } from 'react'
 import { styled } from 'styled-components'
-import { useRef, useCallback } from 'react'
 import { useAllNewsArticle } from '../../hooks/useAllArticle'
 
 const NewsCard = styled.div`
@@ -101,59 +100,60 @@ export const NewsSection: React.FC = () => {
     scrollTarget.scrollLeft -= 280
   }, [])
   return (
-    <Flex flexDirection="column" style={{ gap: 36 }}>
-      <Flex justifyContent="center" style={{ gap: 8 }}>
-        <Text fontSize={40} fontWeight={600} textAlign="center">
-          {t('Featured')}
-        </Text>
-        <Text fontSize={40} fontWeight={600} color="secondary" textAlign="center">
-          {t('News')}
-        </Text>
-      </Flex>
-      <Flex>
-        <Flex alignItems="center" mr="8px">
-          <ArrowButton>
-            <ChevronLeftIcon onClick={() => onButtonClick('pre')} color={theme.colors.textSubtle} />
-          </ArrowButton>
-        </Flex>
-        <CardWrapper ref={scrollWrapper}>
-          {!isFetching &&
-            articlesData?.data.map((d) => (
-              <NewsCard
-                onClick={() => {
-                  window.open(d.newsOutBoundLink, '_blank', 'noopener noreferrer')
-                }}
-              >
-                <ImageBox>
-                  <img src={d.imgUrl} alt="" />
-                </ImageBox>
-                <ContentBox>
-                  <Flex justifyContent="space-between">
-                    <Text bold fontSize={12} color={theme.colors.textSubtle} lineHeight="120%">
-                      {t('From')} [{d.newsFromPlatform}]
-                    </Text>
-                    <Text bold fontSize={12} color={theme.colors.textSubtle} lineHeight="120%">
-                      {new Date(d.createAt).toLocaleString('en-US', {
-                        month: 'short',
-                        year: 'numeric',
-                        day: 'numeric',
-                      })}
-                    </Text>
-                  </Flex>
-                  <Text bold mt="16px" lineHeight="120%" minHeight="66px" style={{ whiteSpace: 'pre-wrap' }}>
-                    {d.title}
-                  </Text>
-                  <DescriptionBox>{d.description}</DescriptionBox>
-                </ContentBox>
-              </NewsCard>
-            ))}
-        </CardWrapper>
-        <Flex alignItems="center" ml="8px">
-          <ArrowButton>
-            <ChevronRightIcon onClick={() => onButtonClick('next')} color={theme.colors.textSubtle} />
-          </ArrowButton>
-        </Flex>
-      </Flex>
-    </Flex>
+    // <Flex flexDirection="column" style={{ gap: 36 }}>
+    //   <Flex justifyContent="center" style={{ gap: 8 }}>
+    //     <Text fontSize={40} fontWeight={600} textAlign="center">
+    //       {t('Featured')}
+    //     </Text>
+    //     <Text fontSize={40} fontWeight={600} color="secondary" textAlign="center">
+    //       {t('News')}
+    //     </Text>
+    //   </Flex>
+    //   <Flex>
+    //     <Flex alignItems="center" mr="8px">
+    //       <ArrowButton>
+    //         <ChevronLeftIcon onClick={() => onButtonClick('pre')} color={theme.colors.textSubtle} />
+    //       </ArrowButton>
+    //     </Flex>
+    //     <CardWrapper ref={scrollWrapper}>
+    //       {!isFetching &&
+    //         articlesData?.data.map((d) => (
+    //           <NewsCard
+    //             onClick={() => {
+    //               window.open(d.newsOutBoundLink, '_blank', 'noopener noreferrer')
+    //             }}
+    //           >
+    //             <ImageBox>
+    //               <img src={d.imgUrl} alt="" />
+    //             </ImageBox>
+    //             <ContentBox>
+    //               <Flex justifyContent="space-between">
+    //                 <Text bold fontSize={12} color={theme.colors.textSubtle} lineHeight="120%">
+    //                   {t('From')} [{d.newsFromPlatform}]
+    //                 </Text>
+    //                 <Text bold fontSize={12} color={theme.colors.textSubtle} lineHeight="120%">
+    //                   {new Date(d.createAt).toLocaleString('en-US', {
+    //                     month: 'short',
+    //                     year: 'numeric',
+    //                     day: 'numeric',
+    //                   })}
+    //                 </Text>
+    //               </Flex>
+    //               <Text bold mt="16px" lineHeight="120%" minHeight="66px" style={{ whiteSpace: 'pre-wrap' }}>
+    //                 {d.title}
+    //               </Text>
+    //               <DescriptionBox>{d.description}</DescriptionBox>
+    //             </ContentBox>
+    //           </NewsCard>
+    //         ))}
+    //     </CardWrapper>
+    //     <Flex alignItems="center" ml="8px">
+    //       <ArrowButton>
+    //         <ChevronRightIcon onClick={() => onButtonClick('next')} color={theme.colors.textSubtle} />
+    //       </ArrowButton>
+    //     </Flex>
+    //   </Flex>
+    // </Flex>
+    <></>
   )
 }

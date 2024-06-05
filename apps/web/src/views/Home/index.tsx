@@ -1,5 +1,5 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { Box, Flex, PageSection, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
+import { Box, PageSection, useMatchBreakpoints } from '@pancakeswap/uikit'
 import useTheme from 'hooks/useTheme'
 import { styled } from 'styled-components'
 import MultipleBanner from './components/Banners/MultipleBanner'
@@ -8,10 +8,8 @@ import CakeSection from './components/CakeSection'
 import CommunitySection from './components/CommunitySection'
 import { RightTopBox } from './components/CommunitySection/ImagesOnBg'
 import EcoSystemSection from './components/EcoSystemSection'
-import Footer from './components/Footer'
 import Hero from './components/Hero'
 import MetricsSection from './components/MetricsSection'
-import { NewsSection } from './components/NewsSection'
 import {
   InnerWedgeWrapper,
   OuterWedgeWrapper,
@@ -51,7 +49,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
             background: linear-gradient(180deg, #09070c 22%, #201335 100%);
           }
           #home-3 .page-bg {
-            background: linear-gradient(180deg, #6fb6f1 0%, #eaf2f6 100%);
+            background: linear-gradient(180deg, #da251d 0%, #e79090 100%);
           }
           [data-theme='dark'] #home-3 .page-bg {
             background: linear-gradient(180deg, #0b4576 0%, #091115 100%);
@@ -64,7 +62,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
           }
 
           #bottom-wedge4-2 svg {
-            fill: #72b8f2;
+            fill: #da251d;
           }
           [data-theme='dark'] #bottom-wedge4-2 svg {
             fill: #0b4576;
@@ -117,27 +115,30 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         index={2}
         hasCurvedDivider={false}
       >
+        
+        
+        <CakeDataRow />
+       
+        
+        <OuterWedgeWrapper>
+          <InnerWedgeWrapper id="bottom-wedge4-2">
+            <WedgeBottomRight />
+          </InnerWedgeWrapper>
+        </OuterWedgeWrapper>
         <OuterWedgeWrapper>
           <InnerWedgeWrapper width="150%" top>
             <WedgeTopRight />
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
         <CakeSection />
-        <Flex style={{ gap: 5 }} justifyContent="center" mt="40px">
+        {/* <Flex style={{ gap: 5 }} justifyContent="center" mt="40px">
           <Text fontSize={24} bold>
-            {/* {t('CAKE')} */}
             PGC
           </Text>
           <Text fontSize={24} bold color="secondary">
             {t('Figures')}
           </Text>
-        </Flex>
-        <CakeDataRow />
-        <OuterWedgeWrapper>
-          <InnerWedgeWrapper id="bottom-wedge4-2">
-            <WedgeBottomRight />
-          </InnerWedgeWrapper>
-        </OuterWedgeWrapper>
+        </Flex> */}
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
@@ -150,7 +151,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         <RightTopBox />
         <CommunitySection />
       </PageSection>
-      <PageSection
+      {/* <PageSection
         innerProps={{
           style: {
             ...HomeSectionContainerStyles,
@@ -170,7 +171,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         hasCurvedDivider={false}
       >
         <Footer />
-      </PageSection>
+      </PageSection> */}
     </Box>
   )
 }

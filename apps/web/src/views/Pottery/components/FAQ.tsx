@@ -1,7 +1,7 @@
-import { styled } from 'styled-components'
-import { Card, CardBody, CardHeader, Heading, Text, Flex, Link } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
+import { Card, CardBody, CardHeader, Flex, Heading, Link, Text } from '@pancakeswap/uikit'
 import FoldableText from 'components/FoldableSection/FoldableText'
+import { styled } from 'styled-components'
 
 const Wrapper = styled(Flex)`
   width: 100%;
@@ -75,7 +75,7 @@ const FAQ = () => {
           <FoldableText title={t('Where can I learn more about this new Pottery format?')} mt="24px">
             <Text fontSize="14px" color="textSubtle">
               {t('Please feel free to reach out to us on')}
-              <InlineLink fontSize="14px" external href="https://t.me/pancakeswap">
+              <InlineLink fontSize="14px" external href="https://t.me/pgchain_org">
                 {t('Telegram')}
               </InlineLink>
               {t('or')}

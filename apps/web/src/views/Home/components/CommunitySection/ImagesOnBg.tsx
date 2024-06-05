@@ -151,7 +151,7 @@ export const RightTopBox: React.FC = () => {
       <Image className="heart" src={`${ASSET_CDN}/web/landing/community-items/3.png`} />
       <Image className="speaker" src={`${ASSET_CDN}/web/landing/community-items/4.png`} alt="speaker" />
       <Image className="yellowBubble" src={`${ASSET_CDN}/web/landing/community-items/5.png`} alt="yellow-bubble" /> */}
-       <Image className="" src={`/images/nfts/11 1.png`} alt="yellow-bubble" style={{marginRight: '400px', marginTop:'300px'}}/>
+       {/* <Image className="" src={`/images/nfts/11 1.png`} alt="yellow-bubble" style={{marginRight: '400px', marginTop:'300px'}}/> */}
     </RightImageWrapper>
   )
 }
@@ -172,7 +172,7 @@ export const LeftBottomBox: React.FC = () => {
       <Image className="twitter" src={`${ASSET_CDN}/web/landing/socials/2.png`} alt="twitter" />
       <Image className="telegram" src={`${ASSET_CDN}/web/landing/socials/3.png`} alt="telegram" />
       <Image className="instagram" src={`${ASSET_CDN}/web/landing/socials/4.png`} alt="instagram" /> */}
-      <Image src={`/images/nfts/zi121 1.png`}></Image>
+      {/* <Image src={`/images/nfts/zi121 1.png`}></Image> */}
     </LeftImageWrapper>
   )
 }

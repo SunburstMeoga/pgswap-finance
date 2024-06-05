@@ -13,26 +13,26 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         label: t('Earn'),
         href: '/farms',
       },
-      {
-        label: t('Game'),
-        href: 'https://pancakeswap.games/',
-      },
+      // {
+      //   label: t('Game'),
+      //   href: 'https://pancakeswap.games/',
+      // },
       {
         label: t('NFT'),
         href: 'https://pancakeswap.finance/nfts',
       },
-      {
-        label: t('Tokenomics'),
-        href: 'https://docs.pancakeswap.finance/governance-and-tokenomics/cake-tokenomics',
-      },
-      {
-        label: t('CAKE Emission Projection'),
-        href: 'https://analytics.pancakeswap.finance/',
-      },
-      {
-        label: t('Merchandise'),
-        href: 'https://merch.pancakeswap.finance/',
-      },
+      // {
+      //   label: t('Tokenomics'),
+      //   href: 'https://docs.pancakeswap.finance/governance-and-tokenomics/cake-tokenomics',
+      // },
+      // {
+      //   label: t('CAKE Emission Projection'),
+      //   href: 'https://analytics.pancakeswap.finance/',
+      // },
+      // {
+      //   label: t('Merchandise'),
+      //   href: 'https://merch.pancakeswap.finance/',
+      // },
     ],
   },
   {
@@ -55,22 +55,23 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
   {
     label: t('Developers'),
     items: [
-      {
-        label: t('Contributing'),
-        href: 'https://docs.pancakeswap.finance/developers/contributing',
-      },
+      // {
+      //   label: t('Contributing'),
+      //   href: 'https://docs.pancakeswap.finance/developers/contributing',
+      // },
       {
         label: t('Github'),
-        href: 'https://github.com/pancakeswap',
+        // href: 'https://github.com/pancakeswap',
+        href: 'https://github.com/pgchain'
       },
-      {
-        label: t('Bug Bounty'),
-        href: 'https://docs.pancakeswap.finance/developers/bug-bounty',
-      },
-      {
-        label: t('v4'),
-        href: 'https://pancakeswap.finance/v4',
-      },
+      // {
+      //   label: t('Bug Bounty'),
+      //   href: 'https://docs.pancakeswap.finance/developers/bug-bounty',
+      // },
+      // {
+      //   label: t('v4'),
+      //   href: 'https://pancakeswap.finance/v4',
+      // },
     ],
   },
   {
@@ -78,37 +79,37 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Contact'),
-        href: 'https://docs.pancakeswap.finance/contact-us/customer-support',
+        href: 'https://www.pgchain.org/',
       },
-      {
-        label: t('Troubleshooting'),
-        href: 'https://docs.pancakeswap.finance/readme/help/troubleshooting',
-      },
-      {
-        label: t('Documentation'),
-        href: 'https://docs.pancakeswap.finance/',
-      },
+      // {
+      //   label: t('Troubleshooting'),
+      //   href: 'https://docs.pancakeswap.finance/readme/help/troubleshooting',
+      // },
+      // {
+      //   label: t('Documentation'),
+      //   href: 'https://docs.pancakeswap.finance/',
+      // },
     ],
   },
-  {
-    label: t('About'),
-    items: [
-      {
-        label: t('Terms Of Service'),
-        href: 'https://pancakeswap.finance/terms-of-service',
-      },
-      {
-        label: t('Blog'),
-        href: 'https://blog.pancakeswap.finance/',
-      },
-      {
-        label: t('Brand Assets'),
-        href: 'https://docs.pancakeswap.finance/ecosystem-and-partnerships/brand',
-      },
-      {
-        label: t('Careers'),
-        href: 'https://docs.pancakeswap.finance/team/become-a-chef',
-      },
-    ],
-  },
+  // {
+  //   label: t('About'),
+  //   items: [
+  //     {
+  //       label: t('Terms Of Service'),
+  //       href: 'https://pancakeswap.finance/terms-of-service',
+  //     },
+  //     {
+  //       label: t('Blog'),
+  //       href: 'https://blog.pancakeswap.finance/',
+  //     },
+  //     {
+  //       label: t('Brand Assets'),
+  //       href: 'https://docs.pancakeswap.finance/ecosystem-and-partnerships/brand',
+  //     },
+  //     {
+  //       label: t('Careers'),
+  //       href: 'https://docs.pancakeswap.finance/team/become-a-chef',
+  //     },
+  //   ],
+  // },
 ]

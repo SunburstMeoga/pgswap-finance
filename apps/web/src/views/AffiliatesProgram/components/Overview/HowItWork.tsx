@@ -22,7 +22,8 @@ const HowItWork = () => {
         {t('are meant to be shared')}
       </Heading>
       <Text textAlign="center" color="textSubtle">
-        {t('Together we can make the PGSWAP FINANCE community even stronger')}
+        {/* {t('Together we can make the PGSWAP FINANCE community even stronger')} */}
+        我们可以携手壮大PGSwap社区
       </Text>
       <Text textAlign="center" color="textSubtle" bold mb="32px">
         {t('How do you Become a PGSWAP FINANCE Affiliate?')}

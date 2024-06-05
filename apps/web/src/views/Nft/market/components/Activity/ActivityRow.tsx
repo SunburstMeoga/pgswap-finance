@@ -1,21 +1,18 @@
 import {
   Box,
-  BscScanIcon,
   Flex,
-  IconButton,
-  Link,
   Skeleton,
   Td,
   Text,
   useMatchBreakpoints,
-  useModal,
+  useModal
 } from '@pancakeswap/uikit'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 
 import BigNumber from 'bignumber.js'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import { Activity, NftToken } from 'state/nftMarket/types'
-import { getBlockExploreLink, safeGetAddress } from 'utils'
+import { safeGetAddress } from 'utils'
 import ProfileCell from 'views/Nft/market/components/ProfileCell'
 import { nftsBaseUrl, pancakeBunniesAddress } from '../../constants'
 import NFTMedia from '../NFTMedia'
@@ -158,9 +155,12 @@ const ActivityRow: React.FC<React.PropsWithChildren<ActivityRowProps>> = ({
       </Td>
       {isXs || isSm ? null : (
         <Td>
-          <IconButton as={Link} external href={getBlockExploreLink(activity.tx, 'transaction', chainId)}>
+          {/* <IconButton as={Link} external href={getBlockExploreLink(activity.tx, 'transaction', chainId)}>
             <BscScanIcon color="textSubtle" width="18px" />
-          </IconButton>
+          </IconButton> */}
+          <div>
+        <img src="https://www.pgchain.org/img/pglogo@60.png" style={{width: '12px', height: '12px'}}></img>
+      </div>
         </Td>
       )}
     </tr>

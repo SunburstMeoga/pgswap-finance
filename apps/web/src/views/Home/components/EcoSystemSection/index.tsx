@@ -1,7 +1,6 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Box, ChevronRightIcon, Flex, Text, useMatchBreakpoints, useModal } from '@pancakeswap/uikit'
 import USCitizenConfirmModal from 'components/Modal/USCitizenConfirmModal'
-import { ASSET_CDN } from 'config/constants/endpoints'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import useTheme from 'hooks/useTheme'
 import { IdType, useUserNotUsCitizenAcknowledgement } from 'hooks/useUserIsUsCitizenAcknowledgement'
@@ -10,7 +9,6 @@ import { useRouter } from 'next/router'
 import { useMemo } from 'react'
 import { styled } from 'styled-components'
 import { getPerpetualUrl } from 'utils/getPerpetualUrl'
-import GradientLogo from '../GradientLogoSvg'
 
 export const CardWrapper = styled.div`
   border-radius: 24px;
@@ -76,6 +74,7 @@ export const ItemWrapper = styled(Flex)<{ $flexBasis: number }>`
       .hover {
         opacity: 1;
       }
+      
       // filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
     }
   }
@@ -198,6 +197,33 @@ const useTradeBlockData = () => {
         defaultImage: `/images/nfts/kualianqiao.svg`,
         path: 'https://bridge.pancakeswap.finance/',
       },
+      {
+        // title: t('Pools'),
+        title: '双币质押',
+        // description: t('Stake CAKE, earn various rewards'),
+        description: '高收益，多权益',
+
+        ctaTitle: t('Stake Now'),
+        // image: `${ASSET_CDN}/web/landing/earn-pools.png`,
+        // defaultImage: `${ASSET_CDN}/web/landing/earn-pools-purple.png`,
+        image: '/images/nfts/goumai.svg',
+        defaultImage: '/images/nfts/goumai.svg',
+        path: '/pools',
+      },
+      {
+        title: t('NFT Marketplace'),
+        // description: t('Trade unique NFTs on BNB Chain'),
+        description: '在PGC链上交易独一无二的NFT',
+
+        ctaTitle: t('Trade Now'),
+        // image: `${ASSET_CDN}/web/landing/nft-marketplace.png`,
+        // defaultImage: `${ASSET_CDN}/web/landing/nft-marketplace-purple.png`,
+        image: 'images/nfts/NFT-home2.svg',
+        defaultImage: 'images/nfts/NFT-home2.svg',
+
+        path: '/nfts',
+        className: 'adjust-height',
+      },
       // {
       //   title: t('Perpetual'),
       //   description: t('Trade endlessly without expiration dates'),
@@ -212,16 +238,16 @@ const useTradeBlockData = () => {
       //     }
       //   },
       // },
-      {
-        title: t('Buy Crypto'),
-        description: t('Buy crypto with your preferred currency and payment method'),
-        ctaTitle: t('Buy Now'),
-        // image: `${ASSET_CDN}/web/landing/trade-buy-crypto.png`,
-        // defaultImage: `${ASSET_CDN}/web/landing/trade-buy-crypto-purple.png`,
-        image: `/images/nfts/goumai.svg`,
-        defaultImage: `/images/nfts/goumai.svg`,
-        path: '/buy-crypto',
-      },
+      // {
+      //   title: t('Buy Crypto'),
+      //   description: t('Buy crypto with your preferred currency and payment method'),
+      //   ctaTitle: t('Buy Now'),
+      //   // image: `${ASSET_CDN}/web/landing/trade-buy-crypto.png`,
+      //   // defaultImage: `${ASSET_CDN}/web/landing/trade-buy-crypto-purple.png`,
+      //   image: `/images/nfts/goumai.svg`,
+      //   defaultImage: `/images/nfts/goumai.svg`,
+      //   path: '/buy-crypto',
+      // },
     ]
   }, [t, push, perpetualUrl, onUSCitizenModalPresent, userNotUsCitizenAcknowledgement])
 }
@@ -245,10 +271,27 @@ const useEarnBlockData = () => {
         description: '高收益，多权益',
 
         ctaTitle: t('Stake Now'),
-        image: `${ASSET_CDN}/web/landing/earn-pools.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/earn-pools-purple.png`,
+        // image: `${ASSET_CDN}/web/landing/earn-pools.png`,
+        // defaultImage: `${ASSET_CDN}/web/landing/earn-pools-purple.png`,
+        image: '/images/nfts/goumai.svg',
+        defaultImage: '/images/nfts/goumai.svg',
         path: '/pools',
       },
+      {
+        title: t('NFT Marketplace'),
+        // description: t('Trade unique NFTs on BNB Chain'),
+        description: '在PGC链上交易独一无二的NFT',
+
+        ctaTitle: t('Trade Now'),
+        // image: `${ASSET_CDN}/web/landing/nft-marketplace.png`,
+        // defaultImage: `${ASSET_CDN}/web/landing/nft-marketplace-purple.png`,
+        image: 'images/nfts/NFT-home2.svg',
+        defaultImage: 'images/nfts/NFT-home2.svg',
+
+        path: '/nfts',
+        className: 'adjust-height',
+      },
+      
       // {
       //   title: t('Liquid Staking'),
       //   description: t('Earn rewards while retaining asset flexibility'),
@@ -298,17 +341,17 @@ const useNftGameBlockData = () => {
       //   defaultImage: `${ASSET_CDN}/web/landing/game-prediction-purple.png`,
       //   path: '/prediction',
       // },
-      {
-        title: t('NFT Marketplace'),
-        // description: t('Trade unique NFTs on BNB Chain'),
-        description: '在PGC链上交易独一无二的NFT',
+      // {
+      //   title: t('NFT Marketplace'),
+      //   // description: t('Trade unique NFTs on BNB Chain'),
+      //   description: '在PGC链上交易独一无二的NFT',
 
-        ctaTitle: t('Trade Now'),
-        image: `${ASSET_CDN}/web/landing/nft-marketplace.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/nft-marketplace-purple.png`,
-        path: '/nfts',
-        className: 'adjust-height',
-      },
+      //   ctaTitle: t('Trade Now'),
+      //   image: `${ASSET_CDN}/web/landing/nft-marketplace.png`,
+      //   defaultImage: `${ASSET_CDN}/web/landing/nft-marketplace-purple.png`,
+      //   path: '/nfts',
+      //   className: 'adjust-height',
+      // },
     ]
   }, [t])
 }
@@ -333,8 +376,8 @@ const FeatureBox: React.FC<{
       onClick={onClick ? () => onClick() : () => path && push(path)}
     >
       <ImageBox>
-        <Image className="default" src={defaultImage} width={108} height={108} alt={title} unoptimized />
-        <Image className="hover" src={image} width={108} height={108} alt={title} unoptimized />
+        <Image className="default" src={defaultImage} width={80} height={108} alt={title} unoptimized />
+        <Image className="hover" src={image} width={80} height={108} alt={title} unoptimized />
       </ImageBox>
       <Box>
         <Text fontSize="20px" mb="8px" lineHeight="110%" fontWeight={600} color={theme.colors.text}>
@@ -364,7 +407,7 @@ const EcoSystemSection: React.FC = () => {
 
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column" pt={isMobile ? '24px' : '60px'}>
-      <GradientLogo height="48px" width="48px" mb="24px" />
+      {/* <GradientLogo height="48px" width="48px" mb="24px" /> */}
       <Text textAlign="center" p="0px 20px">
         <Text
           fontSize={['32px', null, null, '40px']}
@@ -392,7 +435,7 @@ const EcoSystemSection: React.FC = () => {
           bold
           color={theme.colors.text}
         >
-          的无尽可能
+          的无限可能
         </Text>
       </Text>
       <CardWrapper>
@@ -431,7 +474,7 @@ const EcoSystemSection: React.FC = () => {
           </Flex>
         </Flex>
       </CardWrapper>
-      <CardWrapper>
+      {/* <CardWrapper>
         <Flex
           style={{ gap: 32 }}
           flexDirection={isMobile || isMd ? 'column' : 'row-reverse'}
@@ -439,7 +482,8 @@ const EcoSystemSection: React.FC = () => {
         >
           <Image
             style={{ marginRight: isMobile || isMd ? 'auto' : -72, marginLeft: isMobile || isMd ? 0 : 'auto' }}
-            src={`${ASSET_CDN}/web/landing/earn-bunny.png`}
+            // src={`${ASSET_CDN}/web/landing/earn-bunny.png`}
+            src={`/images/nfts/ziyuan1.svg`}
             alt="earn-bunny"
             width={296}
             height={360}
@@ -464,8 +508,8 @@ const EcoSystemSection: React.FC = () => {
             </FeatureBoxesWrapper>
           </Flex>
         </Flex>
-      </CardWrapper>
-      <CardWrapper>
+      </CardWrapper> */}
+      {/* <CardWrapper>
         <Flex
           style={{ gap: 32 }}
           flexDirection={isMobile || isMd ? 'column' : 'row'}
@@ -480,7 +524,6 @@ const EcoSystemSection: React.FC = () => {
             unoptimized
           />
           <Flex flexDirection="column">
-            {/* <Title>{t('Game & NFT')}</Title> */}
             <Title>NFT</Title>
 
             <FeatureBoxesWrapper>
@@ -500,7 +543,7 @@ const EcoSystemSection: React.FC = () => {
             </FeatureBoxesWrapper>
           </Flex>
         </Flex>
-      </CardWrapper>
+      </CardWrapper> */}
     </Flex>
   )
 }

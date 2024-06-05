@@ -229,11 +229,11 @@ const YourTradingReward: React.FC<React.PropsWithChildren<YourTradingRewardProps
       )}
 
       <Decorations showBackgroundColor={!!account}>
-        <img src="/images/trading-reward/left-bunny.png" width="93px" height="242px" alt="left-bunny" />
+        {/* <img src="/images/trading-reward/left-bunny.png" width="93px" height="242px" alt="left-bunny" />
         <img src="/images/trading-reward/right-bunny.png" width="161px" height="161px" alt="right-bunny" />
         <img src="/images/trading-reward/love-butter.png" width="306px" height="306px" alt="love-butter" />
         <img src="/images/trading-reward/butter.png" width="195px" height="191px" alt="butter" />
-        <img src="/images/trading-reward/coin.png" width="183px" height="119px" alt="coin" />
+        <img src="/images/trading-reward/coin.png" width="183px" height="119px" alt="coin" /> */}
       </Decorations>
     </StyledBackground>
   )

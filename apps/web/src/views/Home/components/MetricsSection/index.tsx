@@ -3,7 +3,6 @@ import { Flex, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { useQuery } from '@tanstack/react-query'
 import Image from 'next/legacy/image'
 import { styled } from 'styled-components'
-import { ChainTags } from './ChainTags'
 import { MetricsCard } from './MetricsCard'
 
 const ImageLayer = styled.div`
@@ -97,7 +96,7 @@ const Stats = () => {
         <MetricsCard title={t('Total Trades:')} value={txCount} description={t('in the last 30 days')} />
         <MetricsCard title={t('Total Value Locked:')} value={tvl} description="" prefix="$" />
       </Flex>
-      <ChainTags />
+      {/* <ChainTags /> */}
       <ImageLayer>
         <BnbBallRocket>
           <Image

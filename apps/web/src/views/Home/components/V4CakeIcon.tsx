@@ -1,9 +1,7 @@
-import { Image, Link } from '@pancakeswap/uikit'
-import { ASSET_CDN } from 'config/constants/endpoints'
+import { Link } from '@pancakeswap/uikit'
 import throttle from 'lodash/throttle'
 import { useEffect, useState } from 'react'
 import { styled } from 'styled-components'
-import NextLink from 'next/link'
 
 const Container = styled(Link)<{ hasScrollToTopButton: boolean }>`
   position: fixed;
@@ -36,10 +34,11 @@ export const V4CakeIcon = () => {
   }, [])
 
   return (
-    <NextLink href="/v4" passHref>
-      <Container hasScrollToTopButton={hasScrollToTopButton} href="replace">
-        <Image src={`${ASSET_CDN}/web/v4-landing/v4-icon.png`} alt="introducing-v4-icon" width={48} height={48} />
-      </Container>
-    </NextLink>
+    // <NextLink href="/v4" passHref>
+    //   <Container hasScrollToTopButton={hasScrollToTopButton} href="replace">
+    //     <Image src={`${ASSET_CDN}/web/v4-landing/v4-icon.png`} alt="introducing-v4-icon" width={48} height={48} />
+    //   </Container>
+    // </NextLink>
+    <></>
   )
 }

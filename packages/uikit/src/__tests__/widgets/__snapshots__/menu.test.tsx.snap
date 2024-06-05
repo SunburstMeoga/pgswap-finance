@@ -2552,7 +2552,7 @@ exports[`renders correctly 1`] = `
         <a
           aria-label="Twitter"
           class="c20 c13"
-          href="https://twitter.com/pancakeswap"
+          href="https://twitter.com/osk_labs"
           rel="noreferrer noopener"
           target="_blank"
         >
@@ -2591,7 +2591,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="English"
               class="c26 c13"
-              href="https://t.me/pancakeswap"
+              href="https://t.me/pgchain_org"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2600,7 +2600,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="Bahasa Indonesia"
               class="c26 c13"
-              href="https://t.me/pancakeswapIndonesia"
+              href="https://t.me/pgchain_orgIndonesia"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2609,7 +2609,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="中文"
               class="c26 c13"
-              href="https://t.me/pancakeswap_CN"
+              href="https://t.me/pgchain_org_CN"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2618,7 +2618,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="Tiếng Việt"
               class="c26 c13"
-              href="https://t.me/PancakeSwapVN"
+              href="https://t.me/pgchain_orgVN"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2627,7 +2627,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="Italiano"
               class="c26 c13"
-              href="https://t.me/pancakeswap_Ita"
+              href="https://t.me/pgchain_org_Ita"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2636,7 +2636,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="русский"
               class="c26 c13"
-              href="https://t.me/pancakeswap_ru"
+              href="https://t.me/pgchain_org_ru"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2645,7 +2645,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="Türkiye"
               class="c26 c13"
-              href="https://t.me/pancakeswapturkiye"
+              href="https://t.me/pgchain_orgturkiye"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2654,7 +2654,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="Português"
               class="c26 c13"
-              href="https://t.me/pancakeswapPortuguese"
+              href="https://t.me/pgchain_orgPortuguese"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2663,7 +2663,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="Español"
               class="c26 c13"
-              href="https://t.me/pancakeswapES"
+              href="https://t.me/pgchain_orgES"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2672,7 +2672,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="日本語"
               class="c26 c13"
-              href="https://t.me/pancakeswapJP"
+              href="https://t.me/pgchain_orgJP"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2681,7 +2681,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="Français"
               class="c26 c13"
-              href="https://t.me/pancakeswapFR"
+              href="https://t.me/pgchain_orgFR"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2690,7 +2690,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="Deutsch"
               class="c26 c13"
-              href="https://t.me/pancakeswap_DE"
+              href="https://t.me/pgchain_org_DE"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2699,7 +2699,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="Filipino"
               class="c26 c13"
-              href="https://t.me/pancakeswap_PH"
+              href="https://t.me/pgchain_org_PH"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2708,7 +2708,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="ქართული ენა"
               class="c26 c13"
-              href="https://t.me/pancakeswapGeorgia"
+              href="https://t.me/pgchain_orgGeorgia"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2717,7 +2717,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="हिन्दी"
               class="c26 c13"
-              href="https://t.me/pancakeswap_INDIA"
+              href="https://t.me/pgchain_org_INDIA"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2726,7 +2726,7 @@ exports[`renders correctly 1`] = `
             <a
               aria-label="Announcements"
               class="c26 c13"
-              href="https://t.me/PancakeSwapAnn"
+              href="https://t.me/pgchain_orgAnn"
               rel="noreferrer noopener"
               target="_blank"
             >

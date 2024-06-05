@@ -1,5 +1,5 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { BlockIcon, BscScanIcon, CheckmarkCircleIcon, Flex, RefreshIcon } from '@pancakeswap/uikit'
+import { BlockIcon, CheckmarkCircleIcon, Flex, RefreshIcon } from '@pancakeswap/uikit'
 import { useAppDispatch } from 'state'
 import { pickFarmTransactionTx } from 'state/global/actions'
 import { FarmTransactionStatus, TransactionType } from 'state/transactions/actions'
@@ -81,6 +81,9 @@ const TransactionRow: React.FC<React.PropsWithChildren<TransactionRowProps>> = (
       <TxnIcon>
         <BscScanIcon width="24px" color="primary" />
       </TxnIcon>
+      {/* <div>
+        <img src="https://www.pgchain.org/img/pglogo@60.png" style={{width: '12px', height: '12px'}}></img>
+      </div> */}
     </TxnLink>
   )
 }

@@ -178,10 +178,10 @@ const CurrentRewardPool: React.FC<React.PropsWithChildren<CurrentRewardPoolProps
           </Link>
         )}
       </Flex>
-      <Decorations>
+      {/* <Decorations>
         <img src="/images/trading-reward/pool-1.png" width="307px" height="195px" alt="pool-1" />
         <img src="/images/trading-reward/pool-2.png" width="106px" height="106px" alt="pool-2" />
-      </Decorations>
+      </Decorations> */}
     </Container>
   )
 }

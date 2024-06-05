@@ -1,15 +1,12 @@
-import { Button, ChevronRightIcon, Flex, Grid, Heading } from '@pancakeswap/uikit'
+import { Button, ChevronRightIcon, Flex, Heading } from '@pancakeswap/uikit'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 import { useEffect, useState } from 'react'
 
 import { useTranslation } from '@pancakeswap/localization'
 import { getLatestListedNfts, getNftsFromDifferentCollectionsApi } from 'state/nftMarket/helpers'
 import { NftToken } from 'state/nftMarket/types'
-import { safeGetAddress } from 'utils'
 import { Address } from 'viem'
-import { nftsBaseUrl, pancakeBunniesAddress } from 'views/Nft/market/constants'
-import { CollectibleLinkCard } from '../components/CollectibleCard'
-import GridPlaceholder from '../components/GridPlaceholder'
+import { nftsBaseUrl } from 'views/Nft/market/constants'
 
 /**
  * Fetch latest NFTs data from SG+API and combine them
@@ -60,7 +57,7 @@ const Newest: React.FC<React.PropsWithChildren> = () => {
           {t('View All')}
         </Button>
       </Flex>
-      {nfts ? (
+      {/* {nfts ? (
         <Grid
           gridRowGap="24px"
           gridColumnGap="16px"
@@ -82,7 +79,7 @@ const Newest: React.FC<React.PropsWithChildren> = () => {
         </Grid>
       ) : (
         <GridPlaceholder numItems={8} />
-      )}
+      )} */}
     </>
   )
 }

@@ -12,14 +12,8 @@ import { checkIsIOS } from '../../hooks/useIsIOS'
 import { useObserverOnce } from '../../hooks/useObserver'
 
 import {
-  CakePartnerTag,
-  CakeSectionTag,
-  EcoSystemTagOuterWrapper,
-  FeatureTagsWrapper,
-  PartnerTagOuterWrapper,
-  PartnerTagsWrapper,
   useEcosystemTagData,
-  usePartnerData,
+  usePartnerData
 } from './CakeSectionTag'
 
 const LINE_TRANSITION_TIMES = 0.35
@@ -452,7 +446,7 @@ const CakeSection: React.FC = () => {
       <Text textAlign="center" padding="0px 16px">
         <Text fontSize={['32px', null, null, '40px']} display="inline" fontWeight={600} lineHeight="110%">
           {/* {t('Unlock the Full Potential of DeFi with')} */}
-          全面释放 DeFi 潜力 -
+          全面释放DeFi潜力 - 尽享PGC优势
         </Text>
         <Text
           fontWeight={600}
@@ -463,7 +457,7 @@ const CakeSection: React.FC = () => {
           lineHeight="110%"
         >
           {/* {t('CAKE')} */}
-          尽享PGC优势
+
         </Text>
       </Text>
       <Flex justifyContent="center">
@@ -484,7 +478,9 @@ const CakeSection: React.FC = () => {
       <Flex justifyContent="center" style={{ gap: 14 }}>
         <NextLink href="/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56" passHref>
           <Link href="replace">
-            <Button variant="primary">购买PGC</Button>
+            {/* <Button variant="primary">{t('Buy CAKE')}</Button> */}
+            <Button variant="primary">购买 PGC</Button>
+
           </Link>
         </NextLink>
         <Link href="https://docs.pancakeswap.finance/governance-and-tokenomics/cake-tokenomics">
@@ -493,7 +489,7 @@ const CakeSection: React.FC = () => {
           </Button>
         </Link>
       </Flex>
-      <Flex flexDirection={['column']} mb="40px">
+      {/* <Flex flexDirection={['column']} mb="40px">
         <CakeSectionMainBox>
           <CakeLeftLine ref={leftLineRef} className={played?.current ? 'show' : ''} />
           <CakeSectionLeftBox>
@@ -550,13 +546,12 @@ const CakeSection: React.FC = () => {
             </Text>
             <NextLink href="/cake-staking" passHref>
               <Link href="replace" margin="auto">
-                {/* <Button variant="secondary">{t('Lock CAKE Now!')}🔥</Button> */}
-                <Button variant="secondary">立即锁定PGC🔥</Button>
+                <Button variant="secondary">{t('Lock CAKE Now!')}🔥</Button>
               </Link>
             </NextLink>
           </BottomCakeContainer>
         </CakeSectionBottomBox>
-      </Flex>
+      </Flex> */}
     </Flex>
   )
 }
