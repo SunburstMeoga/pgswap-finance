@@ -60,7 +60,7 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
             </Heading>
             <Heading scale="md" color="text">
               {/* {t('Just stake some tokens to earn.')} */}
-              通过质押代币，轻松赚取收益。
+              通过质押代币，轻松赚取收益
             </Heading>
             <Heading scale="md" color="text">
               {/* {t('High APR, low risk.')} */}
